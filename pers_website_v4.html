@@ -53,9 +53,9 @@
                             <div class='position'>Full-stack Developer, November 2014 - Present</div>
                         </div>
                         <div class='item-body'>
-                            <div class='point'>&#128908; Led development on redesigning a Marionette based customer display</div>
-                            <div class='point'>&#128908; Reduced DB load by 20% by leveraging caching and optimizing SQL queries</div>
-                            <div class='point'>&#128908; Integrated Python microservices with PHP server  for async processing</div>
+                            <div class='point'>- Led development on redesigning a Marionette based customer display</div>
+                            <div class='point'>- Reduced DB load by 20% by leveraging caching and optimizing SQL queries</div>
+                            <div class='point'>- Integrated Python microservices with PHP server  for async processing</div>
                         </div>
                     </div>
                     <div class='exp-item left-middle' id='freelance-content'>
@@ -64,9 +64,9 @@
                             <div class='position'>Full-stack Developer, February 2015 - July 2015</div>
                         </div>
                         <div class='item-body'>
-                            <div class='point'>&#128908; Built auto-scaling Rails web applications with RDS databases</div>
-                            <div class='point'>&#128908; Implemented nightly crons to auto-update DB with data from S3</div>
-                            <div class='point'>&#128908; Designed search functionality using range & exact-match algorithms</div>
+                            <div class='point'>- Built auto-scaling Rails web applications with RDS databases</div>
+                            <div class='point'>- Implemented nightly crons to auto-update DB with data from S3</div>
+                            <div class='point'>- Designed search functionality using range & exact-match algorithms</div>
                         </div>
                     </div>
                     <div class='exp-item left-bottom' id='aa-content'>
@@ -75,8 +75,8 @@
                             <div class='position'>Student, August 2014 - October 2014</div>
                         </div>
                         <div class='item-body'>
-                            <div class='point'>&#128908; Wrote asteroids in HTML5 canvas and Javascript</div>
-                            <div class='point'>&#128908; Capstone: Backbone app consuming a RESTful Rails API</div>
+                            <div class='point'>- Wrote asteroids in HTML5 canvas and Javascript</div>
+                            <div class='point'>- Capstone: Backbone app consuming a RESTful Rails API</div>
                         </div>
                     </div>
                 </div>
@@ -98,9 +98,9 @@
                             <div class='position'>Australia & Oceana, October 2012 - July - 2013</div>
                         </div>
                         <div class='item-body'>
-                            <div class='point'>&#128908; Moved to Australia for 6 months for the hell of it</div>
-                            <div class='point'>&#128908; Hitch-hiked half the coast and into the middle of the dessert</div>
-                            <div class='point'>&#128908; Worked my way through SE Asia, 5 countries, Denpasar to Tokyo</div>
+                            <div class='point'>- Moved to Australia for 6 months for the hell of it</div>
+                            <div class='point'>- Hitch-hiked half the coast and into the middle of the dessert</div>
+                            <div class='point'>- Worked my way through SE Asia, 5 countries, Denpasar to Tokyo</div>
                         </div>
                     </div>
                     <div class='exp-item left-bottom'>
@@ -221,6 +221,15 @@
 
 <script>
     $(function () {
+        var isFirefox = typeof InstallTrigger !== 'undefined';
+
+        if (isFirefox) {
+            $('.panel-mover').addClass('firefox');
+            $('.title').addClass('firefox');
+            $('#name').addClass('firefox');
+            $('#links').addClass('firefox');
+            $('.location').addClass('firefox');
+        }
         var EXPERIENCE = 'Experience';
         var PROJECTS = 'Projects';
         var ABOUT = 'About';
